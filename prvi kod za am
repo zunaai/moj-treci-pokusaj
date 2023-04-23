@@ -103,3 +103,21 @@
 						<th>Ime agenta</th>
 						<th>Tip agenta</th>
 						<th
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin interfejs</title>
+</head>
+<body>
+	<h1>Dobrodošli u Admin interfejs</h1>
+	<form>
+		<label for="username">Korisničko ime:</label>
+		<input type="text" id="username" name="username"><br>
+
+		<label for="password">Lozinka:</label>
+		<input type="password" id="password" name="password"><br>
+
+		<input type="submit" value="Prijavi se">
+	</form>
+</body>
+</html>
