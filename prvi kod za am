@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agent menadžer</title>
+	<style>
+		.container {
+			margin: 20px;
+			padding: 20px;
+			border: 1px solid black;
+			border-radius: 5px;
+		}
+
+		.input-group {
+			margin-bottom: 10px;
+		}
+
+		.input-group label {
+			display: inline-block;
+			width: 120px;
+			font-weight: bold;
+			margin-right: 10px;
+		}
+
+		.input-group input[type="text"], .input-group select {
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			width: 200px;
+		}
+
+		.input-group button {
+			padding: 5px 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+
+		.result {
+			margin-top: 20px;
+			padding: 20px;
+			border: 1px solid black;
+			border-radius: 5px;
+			display: none;
+		}
+
+		.result h3 {
+			margin-top: 0;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.result p {
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
+
+		.result table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		.result th, .result td {
+			padding: 10px;
+			text-align: left;
+			border: 1px solid #ccc;
+		}
+
+		.result th {
+			background-color: #4CAF50;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Agent menadžer</h1>
+		<div class="input-group">
+			<label for="agent-name">Ime agenta:</label>
+			<input type="text" id="agent-name" name="agent-name">
+		</div>
+		<div class="input-group">
+			<label for="agent-type">Tip agenta:</label>
+			<select id="agent-type" name="agent-type">
+				<option value="prodaja">Prodaja</option>
+				<option value="izdavanje">Izdavanje</option>
+			</select>
+		</div>
+		<div class="input-group">
+			<label for="agent-region">Region:</label>
+			<input type="text" id="agent-region" name="agent-region">
+		</div>
+		<div class="input-group">
+			<button id="search-agent">Pretraga agenata</button>
+		</div>
+		<div class="result">
+			<h3>Rezultati pretrage</h3>
+			<p>Broj pronađenih agenata: <span id="agent-count">0</span></p>
+			<table>
+				<thead>
+					<tr>
+						<th>Ime agenta</th>
+						<th>Tip agenta</th>
+						<th
